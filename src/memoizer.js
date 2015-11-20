@@ -8,8 +8,6 @@ See the accompanying LICENSE file for terms.
 
 import {objCreate} from './es5';
 
-export default createFormatCache;
-
 // -----------------------------------------------------------------------------
 
 function createFormatCache(FormatConstructor) {
@@ -80,3 +78,5 @@ function orderedProps(obj) {
 
     return props;
 }
+
+export default createFormatCache;
