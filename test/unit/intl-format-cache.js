@@ -9,17 +9,17 @@ describe('intl-format-cache', function () {
 
     describe('Intl built-ins', function () {
         describe('Intl.DateTimeFormat', function () {
-            var getDateTimeFromat = memoizeFormatConstructor(Intl.DateTimeFormat);
+            var getDateTimeFormat = memoizeFormatConstructor(Intl.DateTimeFormat);
 
             it('memoizes Intl.DateTimeFormat', function () {
-                var df = getDateTimeFromat('en');
+                var df = getDateTimeFormat('en');
 
                 expect(df.resolvedOptions().locale).toBe('en');
                 // Lack of tz support, so just check that it returns a string.
                 expect(df.format(0)).toBeA('string');
 
-                expect(getDateTimeFromat('en')).toBe(df);
-                expect(getDateTimeFromat('en', {year: 'numeric'})).toNotBe(df);
+                expect(getDateTimeFormat('en')).toBe(df);
+                expect(getDateTimeFormat('en', {year: 'numeric'})).toNotBe(df);
             });
         });
 

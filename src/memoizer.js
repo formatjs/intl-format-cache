@@ -6,22 +6,17 @@ See the accompanying LICENSE file for terms.
 
 /* jshint esnext: true */
 
-import {bind, objCreate} from './es5';
-
-export default createFormatCache;
-
 // -----------------------------------------------------------------------------
 
-function createFormatCache(FormatConstructor) {
-    var cache = objCreate(null);
+export default function createFormatCache(FormatConstructor) {
+    var cache = {};
 
-    return function () {
-        var args    = Array.prototype.slice.call(arguments);
-        var cacheId = getCacheId(args);
+    return function (a, b, c) {
+        var cacheId = getCacheId([a,b,c]);
         var format  = cacheId && cache[cacheId];
 
         if (!format) {
-            format = new (bind.apply(FormatConstructor, [null].concat(args)))();
+            format = new FormatConstructor(a, b, c);
 
             if (cacheId) {
                 cache[cacheId] = format;
@@ -42,13 +37,13 @@ function getCacheId(inputs) {
 
     var i, len, input;
 
-    for (i = 0, len = inputs.length; i < len; i += 1) {
+    for (i = 0; i < inputs.length; i++) {
         input = inputs[i];
 
         if (input && typeof input === 'object') {
-            cacheId.push(orderedProps(input));
+            cacheId[i] = orderedProps(input);
         } else {
-            cacheId.push(input);
+            cacheId[i] = input;
         }
     }
 
