@@ -49,6 +49,13 @@ console.log(nf1.format(1000)); // => "1,000"
 console.log(nf3.format(1000)); // => "1 000"
 ```
 
+### TypeScript
+
+```ts
+var getNumberFormat = memoizeFormatConstructor<typeof Intl.NumberFormat>(Intl.NumberFormat);
+
+// ...
+```
 
 License
 -------
