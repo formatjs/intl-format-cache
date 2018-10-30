@@ -46,71 +46,71 @@ module.exports = function (grunt) {
                     throttled: 3,
                     browsers: [
                         // Chrome
-                        {
-                            browserName: 'chrome',
-                            platform: 'Windows 10',
-                            version: '46'
-                        },
+                        //{
+                        //    browserName: 'chrome',
+                        //    platform: 'Windows 10',
+                        //    version: '46'
+                        //},
                         {
                             browserName: 'chrome',
                             platform: 'Windows 10',
                             version: 'beta'
-                        },
-                        {
-                            browserName: 'chrome',
-                            platform: 'Windows 10',
-                            version: 'dev'
-                        },
-                        {
-                            browserName: 'internet explorer',
-                            platform: 'Windows 7',
-                            version: '8'
-                        },
+                        //},
+                        //{
+                        //    browserName: 'chrome',
+                        //    platform: 'Windows 10',
+                        //    version: 'dev'
+                        //},
+                        //{
+                        //    browserName: 'internet explorer',
+                        //    platform: 'Windows 7',
+                        //    version: '8'
+                        //},
 
-                        // Firefox
-                        {
-                            browserName: 'firefox',
-                            platform: 'Windows 10',
-                            version: '42'
-                        },
-                        {
-                            browserName: 'firefox',
-                            platform: 'Windows 10',
-                            version: 'beta'
-                        },
+                        //// Firefox
+                        //{
+                        //    browserName: 'firefox',
+                        //    platform: 'Windows 10',
+                        //    version: '42'
+                        //},
+                        //{
+                        //    browserName: 'firefox',
+                        //    platform: 'Windows 10',
+                        //    version: 'beta'
+                        //},
 
-                        // IE/Edge
-                        {
-                            browserName: 'internet explorer',
-                            platform: 'Windows 7',
-                            version: '9'
-                        },
-                        {
-                            browserName: 'internet explorer',
-                            platform: 'Windows 8',
-                            version: '10'
-                        },
-                        {
-                            browserName: 'internet explorer',
-                            platform: 'Windows 8.1',
-                            version: '11'
-                        },
-                        {
-                            browserName: 'MicrosoftEdge',
-                            platform: 'Windows 10',
-                            version: '20'
-                        },
+                        //// IE/Edge
+                        //{
+                        //    browserName: 'internet explorer',
+                        //    platform: 'Windows 7',
+                        //    version: '9'
+                        //},
+                        //{
+                        //    browserName: 'internet explorer',
+                        //    platform: 'Windows 8',
+                        //    version: '10'
+                        //},
+                        //{
+                        //    browserName: 'internet explorer',
+                        //    platform: 'Windows 8.1',
+                        //    version: '11'
+                        //},
+                        //{
+                        //    browserName: 'MicrosoftEdge',
+                        //    platform: 'Windows 10',
+                        //    version: '20'
+                        //},
 
-                        // Safari
-                        {
-                            browserName: 'safari',
-                            platform: 'OS X 10.10',
-                            version: '8'
-                        },
-                        {
-                            browserName: 'safari',
-                            platform: 'OS X 10.11',
-                            version: '9'
+                        //// Safari
+                        //{
+                        //    browserName: 'safari',
+                        //    platform: 'OS X 10.10',
+                        //    version: '8'
+                        //},
+                        //{
+                        //    browserName: 'safari',
+                        //    platform: 'OS X 10.11',
+                        //    version: '9'
                         }
                     ]
                 }
