@@ -36,7 +36,7 @@
     "grunt-contrib-clean": "^0.6.0",
     "grunt-contrib-connect": "^0.11.2",
     "grunt-contrib-copy": "^0.7.0",
-    "grunt-saucelabs": "^8.6.1",
+    "grunt-saucelabs": "^9.0.0",
     "intl": "^1.0.1",
     "intl-messageformat": "^1.2.0",
     "intl-relativeformat": "^1.2.0",
